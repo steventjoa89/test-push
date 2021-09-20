@@ -12,7 +12,7 @@ self.addEventListener('push', function(event) {
       }
     ]
   };
-  e.waitUntil(
+  event.waitUntil(
     self.registration.showNotification("This is a testing push notification", options)
   );
 });
