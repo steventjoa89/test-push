@@ -8,6 +8,6 @@ self.addEventListener('push', (e) => {
 
   };
   e.waitUntil(
-    self.registration.sendNotification('Hello World', {})
+    self.registration.showNotification('Hello World', {options})
   )
 });
