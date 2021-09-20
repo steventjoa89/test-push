@@ -19,6 +19,6 @@ self.addEventListener('push', function(e) {
     ]
   };
   e.waitUntil(
-    self.registration.showNotification(e, options)
+    self.registration.showNotification('xxx', options)
   );
 });
