@@ -9,7 +9,6 @@ self.addEventListener('push', function(e) {
       {
         action: 'explore',
         title: 'Explore this new world',
-        icon: 'images/checkmark.png'
       }
     ]
   };
