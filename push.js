@@ -22,4 +22,4 @@ let sub = {
     auth: "iQNqPWGPQDCWhveKnLZPcA",
   },
 };
-push.sendNotification(sub, "This is a message");
+push.sendNotification(sub, "This is a message1");
