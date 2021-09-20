@@ -1,6 +1,6 @@
-self.addEventListener('push', function(e) {
+self.addEventListener('push', function(event) {
   var options = {
-    body: "This is a body from push notification",
+    body: event.data.text(),
     data: {
       dateOfArrival: Date.now(),
       primaryKey: '2'
