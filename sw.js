@@ -1,4 +1,4 @@
-self.addEventListener('push', (e) => {
+self.addEventListener('push', function(e) {
   var options = {
     body: 'This body was generated from push',
     data: {
@@ -8,6 +8,6 @@ self.addEventListener('push', (e) => {
 
   };
   e.waitUntil(
-    self.registration.showNotification('Hello World', {options})
+    self.registration.showNotification('Hello World', options)
   )
 });
